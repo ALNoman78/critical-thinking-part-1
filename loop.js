@@ -39,5 +39,6 @@ console.log("second array", secondArray.length)
 const anotherUser = secondArray.map((user) => ({userId : user}))
 
 console.time("find2")
-const secondUserList = secondArray.find( secondUser => secondUser.userID === 300000 ) // .userId can be anything so don't worry 
+// const secondUserList = secondArray.find( secondUser => secondUser.userId === 300000 ) // .userId can be anything so don't worry 
+const userList = anotherUser[300000]
 console.timeEnd("find2")
