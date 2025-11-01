@@ -24,10 +24,20 @@ console.log("First array", firstArray.length)
 console.log("second array", secondArray.length)
 
 
-console.time("map1")
-const userFirstData = firstArray.map( number => ({ userId: number}))
-console.timeEnd("map1")
+// console.time("map1")
+// const userFirstData = firstArray.map( number => ({ userId: number}))
+// console.timeEnd("map1")
 
-console.time("map2")
-const userSecondArray = secondArray.map( (secondNumber) => ({ secUser : secondNumber}))
-console.timeEnd("map2")
+// console.time("map2")
+// const userSecondArray = secondArray.map( (secondNumber) => ({ secUser : secondNumber}))
+// console.timeEnd("map2")
+
+// console.time("find")
+// const firstUserList = firstArray.find((number) => ({userId : number}))
+// console.timeEnd("find")
+
+const anotherUser = secondArray.map((user) => ({userId : user}))
+
+console.time("find2")
+const secondUserList = secondArray.find( secondUser => secondUser.userID === 300000 ) // .userId can be anything so don't worry 
+console.timeEnd("find2")
