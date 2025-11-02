@@ -23,8 +23,8 @@ for(let i = 0; i < 500000; i++){
 }
 
 console.timeEnd("mainTime")
-console.log('first user' , firstUser.length);
-console.log('second user' , secondUser.length);
+// console.log('first user' , firstUser.length);
+// console.log('second user' , secondUser.length);
 
 
 console.time("First Array time")
@@ -34,3 +34,9 @@ console.timeEnd("First Array time")
 console.time("second array process time")
 const secondUserArray = secondUser.map((number) => ({ userId: number}))
 console.timeEnd("second array process time")
+
+
+console.time("find")
+// const firstArrayFind = firstUser.find((find) => ({userId : find}))
+const lengthById = firstArrayTest[5000]
+console.timeEnd("find")
